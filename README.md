@@ -110,5 +110,5 @@ static void ConfigureDependencyInjection(IServiceCollection services)
     services.AddTransient<Func<string, ISomething>>(c => c.GetRequiredKeyedService<ISomething>);
 }
 ```
-
+AddKeyedScoped is important here as it allows us to assign a value to that specific registration. You can also use AddKeyedSingleton, AddKeyedTransient, etc. but it must be the Keyed variant registration for your dependency injection container.
 
