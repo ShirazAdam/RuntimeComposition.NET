@@ -116,3 +116,57 @@ static void ConfigureDependencyInjection(IServiceCollection services)
 ```
 AddKeyedScoped is important here as it allows us to assign a value to that specific registration. You can also use AddKeyedSingleton, AddKeyedTransient, etc. but it must be the Keyed variant registration for your dependency injection container.
 
+Resolve the dependencies in the following manner:
+```csharp
+namespace RuntimeComposition.NET.Web.Controllers
+{
+    public class HomeController(Func<string, ISomething> something)
+        : Controller
+    {
+        [HttpGet]
+        public IActionResult Index()
+        {
+            var model = InitialiseModel();
+
+            return View(model);
+        }
+
+        private static HomeViewModel InitialiseModel()
+        {
+            var model = new HomeViewModel()
+            {
+                Id = "0",
+                Somethings =
+                [
+                    new CustomSelectList
+                    {
+                        Id = DependencyInjectionKeys.SomethingKeysEnumeration.Arabic.ValueToStringValue(),
+                        Name = DependencyInjectionKeys.SomethingKeysEnumeration.Arabic.DescriptionToStringValue()
+                    },
+
+                    new CustomSelectList
+                    {
+                        Id = DependencyInjectionKeys.SomethingKeysEnumeration.Japanese.ValueToStringValue(),
+                        Name = DependencyInjectionKeys.SomethingKeysEnumeration.Japanese.DescriptionToStringValue()
+                    }
+                ],
+                Chosen = string.Empty
+            };
+            return model;
+        }
+
+        [HttpPost]
+        public IActionResult Index(string id)
+        {
+            var myChoice = something(id);
+
+            var model = InitialiseModel();
+
+            model.Chosen = myChoice.ReturnMessage();
+
+            return View(model);
+        }
+    }
+}
+
+```
