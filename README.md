@@ -19,7 +19,7 @@ https://code-maze.com/aspnetcore-register-multiple-interface-implementations/
 https://stackoverflow.com/questions/39174989/how-to-register-multiple-implementations-of-the-same-interface-in-asp-net-core
 
 
-Create a new interface:
+Let's begin by creating a new interface:
 ```csharp
 namespace RuntimeComposition.NET.Contracts
 {
