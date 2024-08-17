@@ -1,0 +1,15 @@
+﻿@model HomeViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <form asp-action="Index" asp-controller="Home" method="post">
+        <select asp-for="Id" asp-items="@(new SelectList(Model.Somethings, "Id", "Name"))">
+            <option selected="selected" value="">Please select...</option>
+        </select>
+        <input type="submit" value="Submit"/>
+        <hr/>
+        You chose: @Html.DisplayFor(model => model.Chosen)
+    </form>
+</div>
