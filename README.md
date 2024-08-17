@@ -13,7 +13,9 @@ I have seen a few articles suggesting to use an explicit delegate which I'm not 
 
 
 The articles I'm referring to are:
+
 https://code-maze.com/aspnetcore-register-multiple-interface-implementations/
+
 https://stackoverflow.com/questions/39174989/how-to-register-multiple-implementations-of-the-same-interface-in-asp-net-core
 
 
