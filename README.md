@@ -9,7 +9,7 @@
 This is an updated version for ASP.NET Core MVC (.NET 8) to showcase the same technique used in the ASP.NET MVC (.NET Framework 4.8.1).
 
 
-I have seen a few articles suggesting to use an explicit delegate which I'm not a fan of, however, these articles inspired me to modernise my [my previous solution at GitLab](https://gitlab.com/ShirazAdam/Runtime-Composition)/[previous solution at GitHub](https://github.com/ShirazAdam/Runtime-Composition) for .NET 8.
+I have seen a few articles suggesting to use an explicit delegate which I'm not a fan of, however, these articles inspired me to modernise my [previous solution at GitLab](https://gitlab.com/ShirazAdam/Runtime-Composition)/[previous solution at GitHub](https://github.com/ShirazAdam/Runtime-Composition) for .NET 8.
 
 
 The articles I'm referring to are:
