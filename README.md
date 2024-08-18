@@ -1,14 +1,14 @@
 # RuntimeComposition.NET
 
-[![.NET](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml)
-
-
 - [https://gitlab.com/ShirazAdam/RuntimeComposition.NET](https://gitlab.com/ShirazAdam/RuntimeComposition.NET)
 - [https://github.com/ShirazAdam/RuntimeComposition.NET](https://github.com/ShirazAdam/RuntimeComposition.NET) 
+- [https://codeberg.org/ShirazAdam/RuntimeComposition.NET](https://codeberg.org/ShirazAdam/RuntimeComposition.NET)
 
 The above projects are a C# .NET 8 ASP.NET MVC Core web application implementation demonstrating the concept of registering multiple implementations against a single interface. They are based on the original work I did using C# .NET Framework 4.8.1 ASP.NET MVC web application located at:
+
 - [https://gitlab.com/ShirazAdam/Runtime-Composition](https://gitlab.com/ShirazAdam/Runtime-Composition)
 - [https://github.com/ShirazAdam/Runtime-Composition](https://github.com/ShirazAdam/Runtime-Composition)
+- [https://codeberg.org/ShirazAdam/Runtime-Composition](https://codeberg.org/ShirazAdam/Runtime-Composition)
 
 
 I have seen a few articles suggesting to use an explicit delegate which I'm not a fan of, however, these articles inspired me to modernise my [previous solution at GitLab](https://gitlab.com/ShirazAdam/Runtime-Composition)/[previous solution at GitHub](https://github.com/ShirazAdam/Runtime-Composition) for .NET 8.
