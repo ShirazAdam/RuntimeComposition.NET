@@ -3,7 +3,12 @@
 [![.NET](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml)
 
 
-[https://gitlab.com/ShirazAdam/RuntimeComposition.NET](https://gitlab.com/ShirazAdam/RuntimeComposition.NET)/[https://github.com/ShirazAdam/RuntimeComposition.NET](https://github.com/ShirazAdam/RuntimeComposition.NET) is a C# .NET 8 ASP.NET MVC web application demonstrating the concept of run time composition. Based on the original work I did in .NET Framework 4.8.1 located at [https://gitlab.com/ShirazAdam/Runtime-Composition](https://gitlab.com/ShirazAdam/Runtime-Composition)/[https://github.com/ShirazAdam/Runtime-Composition](https://github.com/ShirazAdam/Runtime-Composition).
+- [https://gitlab.com/ShirazAdam/RuntimeComposition.NET](https://gitlab.com/ShirazAdam/RuntimeComposition.NET)
+- [https://github.com/ShirazAdam/RuntimeComposition.NET](https://github.com/ShirazAdam/RuntimeComposition.NET) 
+
+The above projects are a C# .NET 8 ASP.NET MVC Core web application implementation demonstrating the concept of registering multiple implementations against a single interface. They are based on the original work I did using C# .NET Framework 4.8.1 ASP.NET MVC web application located at:
+- [https://gitlab.com/ShirazAdam/Runtime-Composition](https://gitlab.com/ShirazAdam/Runtime-Composition)
+- [https://github.com/ShirazAdam/Runtime-Composition](https://github.com/ShirazAdam/Runtime-Composition)
 
 
 This is an updated version for ASP.NET Core MVC (.NET 8) to showcase the same technique used in the ASP.NET MVC (.NET Framework 4.8.1).
