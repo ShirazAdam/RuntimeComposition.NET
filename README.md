@@ -3,20 +3,20 @@
 [![.NET](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ShirazAdam/RuntimeComposition.NET/actions/workflows/dotnet.yml)
 
 
-A C# .NET 8 ASP.NET MVC web application demonstrating the concept of run time composition. Based on the original work I did in .NET Framework 4.8.1 located at https://github.com/ShirazAdam/Runtime-Composition.
+[https://gitlab.com/ShirazAdam/RuntimeComposition.NET](https://gitlab.com/ShirazAdam/RuntimeComposition.NET)/[https://github.com/ShirazAdam/RuntimeComposition.NET](https://github.com/ShirazAdam/RuntimeComposition.NET) is a C# .NET 8 ASP.NET MVC web application demonstrating the concept of run time composition. Based on the original work I did in .NET Framework 4.8.1 located at [https://gitlab.com/ShirazAdam/Runtime-Composition](https://gitlab.com/ShirazAdam/Runtime-Composition)/[https://gitlab.com/ShirazAdam/Runtime-Composition](https://gitlab.com/ShirazAdam/Runtime-Composition).
 
 
 This is an updated version for ASP.NET Core MVC (.NET 8) to showcase the same technique used in the ASP.NET MVC (.NET Framework 4.8.1).
 
 
-I have seen a few articles suggesting to use an explicit delegate which I'm not a fan of, however, these articles inspired me to modernise my [previous solution](https://github.com/ShirazAdam/Runtime-Composition) for .NET 8.
+I have seen a few articles suggesting to use an explicit delegate which I'm not a fan of, however, these articles inspired me to modernise my [my previous solution at GitLab](https://gitlab.com/ShirazAdam/Runtime-Composition)/[previous solution at GitHub](https://github.com/ShirazAdam/Runtime-Composition) for .NET 8.
 
 
 The articles I'm referring to are:
 
-https://code-maze.com/aspnetcore-register-multiple-interface-implementations/
+- https://code-maze.com/aspnetcore-register-multiple-interface-implementations/
 
-https://stackoverflow.com/questions/39174989/how-to-register-multiple-implementations-of-the-same-interface-in-asp-net-core
+- https://stackoverflow.com/questions/39174989/how-to-register-multiple-implementations-of-the-same-interface-in-asp-net-core
 
 
 Let's begin by creating a new interface:
