@@ -113,7 +113,7 @@ static void ConfigureDependencyInjection(IServiceCollection services)
     services.AddKeyedScoped<ISomething, Japanese>(DependencyInjectionKeys.SomethingKeysEnumeration.Japanese.ValueToStringValue());
 
     //DI factory to provide the correct implementation based on the value that is passed to it
-    services.AddTransient<Func<string, ISomething>>(c => c.GetRequiredKeyedService<ISomething>);
+    services.AddTransient<Func<string, ISomething>>(service => service.GetRequiredKeyedService<ISomething>);
 }
 ```
 AddKeyedScoped is important here as it allows us to assign a value to that specific registration. You can also use AddKeyedSingleton, AddKeyedTransient, etc. but it must be the Keyed variant registration for your dependency injection container.
